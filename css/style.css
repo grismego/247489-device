@@ -1,0 +1,50 @@
+@font-face
+{
+    font-family: Gilroy;
+    src: url(../fonts/gilroyextrabold.woff);
+}
+.clearfix:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.container
+{
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.head
+{
+  margin-top: 40px;
+  height: 300px;
+  background-color: #f7e296;
+  width: auto;
+  padding: 0 60px;
+}
+.logo
+{
+  position: relative;
+  top: -25px;
+}
+.logo span
+{
+  font-family: Gilroy;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.logo a
+{
+    text-decoration: none;
+    color: #000;
+}
+.search,
+.enter,
+.compare,
+.cart
+{
+    display: inline;
+}
