@@ -3,41 +3,213 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
-    <link rel="stylesheet" href="css\style.css">
     <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\style.css">
   </head>
   <body>
     <header>
       <div class="container clearfix">
-          <div class="head">
-                <div class="logo">
-                    <span><a href="#">device</a></span>
+        <div class="row">
+            <a href="#" class="logo">device</a>
+        </div>
+        <div class="row-user">
+            <div class="half-row">
+                <div class="search-form">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="поиск по сайту">
+                    </form>
                 </div>
-                <div class="top-head">
-                    <div class="search">
-                        <input type="search" name="search" placeholder="Поиск по сайту">
-                    </div>
-                    <div class="enter">
-                        <span>Войти</span>
-                    </div>
-                    <div class="compare">
-                        <span>сравнить</span>
-                    </div>
-                    <div class="cart">
-                        <span>корзина</span>
-                    </div>
-                </div>
-                <div class="bot-head">
-                    <div class="catalog">
-                        Каталог товаров
-                    </div>
-                    <div class="info">
-                        <span>Гарантия</span>
-                        <span>Контакты</span>
-                    </div>
-                </div>
-          </div>
+            </div>
+            <div class="row-user-block">
+                <a href="#" class="user-block user-block-login">войти</a>
+                <a href="#"class="user-block user-block-compare">сравнить</a>
+                <a href="#" class="user-block user-block-cart">корзина</a>
+            </div>
+        </div>
+        <div class="row-info">
+            <div class="half-row">
+                <a href="#">каталог товаров</a>
+            </div>
+            <nav class="half-row">
+                <ul class="navigation">
+                    <li><a href="#">доставка</a></li>
+                    <li><a href="#">гарантия</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+        </div>
       </div>
     </header>
+    <main>
+        <div class="container cleafrix">
+            <div class="slider-goods">
+                <div class="slide-1">
+                    <img src="#" alt="первый слайд">
+                    <div class="slide-info">
+                        <h2 class="slide-title">Делай селфи, как Бен стиллер</h2>
+                        <p class="slide-description">
+                            Самая длинная палка для селфи доступна в нашем магазине.
+                            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                            <a href="#" class="button">подробнее</a>
+                            <input type="radio" name="toogle-slide" class="slide-toogle" id="1">
+                            <input type="radio" name="toogle-slide" class="slide-toogle" id="2">
+                            <input type="radio" name="toogle-slide" class="slide-toogle" id="3">
+                            <ul class="slide-parametres">
+                                <li class="slide-parametres-item">
+                                    <span class="unit">8,5 м</span>
+                                    <span class="unit-description">Длина палки</span>
+                                </li>
+                                <li class="slide-parametres-item">
+                                    <span class="unit">5 кг</span>
+                                    <span class="unit-description">Вес палки</span>
+                                </li>
+                                <li class="slide-parametres-item">
+                                    <span class="unit">Карбон</span>
+                                    <span class="unit-description">Материал</span>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popular-items">
+                <a href="#" class="popular-item-block">
+                    <img src="#" alt="виртуальная реальность">
+                    <span class="popular-item-description">Виртуальная реальность</span>
+                </a>
+                <a href="#" class="popular-item-block">
+                    <img src="#" alt="Моноподы для селфи">
+                    <span class="popular-item-description">Моноподы для селфи</span>
+                </a>
+                <a href="#" class="popular-item-block">
+                    <img src="#" alt="Экшн-камеры">
+                    <span class="popular-item-description">Экшн-камеры</span>
+                </a>
+                <a href="#" class="popular-item-block">
+                    <img src="#" alt="Фитнесс браслеты">
+                    <span class="popular-item-description">Фитнесс браслеты</span>
+                </a>
+                <a href="#" class="popular-item-block">
+                    <img src="#" alt="Умные часы">
+                    <span class="popular-item-description">Умные часы</span>
+                </a>
+                <a href="#" class="popular-item-block">
+                    <img src="#" alt="Квадрокоптеры">
+                    <span class="popular-item-description">Квадрокоптеры</span>
+                </a>
+            </div>
+            <div class="service-block">
+                <div class="container-clearfix">
+                    <input type="radio" name="toogle-slide" class="service-slide-toogle" id="service-1">
+                    <input type="radio" name="toogle-slide" class="service-slide-toogle" id="service-2">
+                    <input type="radio" name="toogle-slide" class="service-slide-toogle" id="service-3">
+                        <div class="service-toogle" >
+                            <label for="service-1" class="button service-button"></label>
+                            <label for="service-2" class="button service-button"></label>
+                            <label for="service-3" class="button service-button"></label>
+                        </div>
+                        <div class="service-slide service-slide-first">
+                            <h2 class="title service-title">
+                                Доставка
+                            </h2>
+                            <p class="service-text">
+                                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                                совершенно бесплатно!Ведь мы неплохо заработаем,
+                                поднимая его на ваш этаж.
+                            </p>
+                        </div>
+                        <div class="service-slide service-slide-second">
+                            <h2 class="title service-title">
+                                Гарантия
+                            </h2>
+                            <p class="service-text">
+                                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                                совершенно бесплатно!Ведь мы неплохо заработаем,
+                                поднимая его на ваш этаж.
+                            </p>
+                        </div>
+                        <div class="service-slide service-slide-third">
+                            <h2 class="title service-title">
+                                Кредит
+                            </h2>
+                            <p class="service-text">
+                                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                                совершенно бесплатно!Ведь мы неплохо заработаем,
+                                поднимая его на ваш этаж.
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div class="popular-company">
+                <a href="#" class="company-logo" alt="dji"></a>
+                <a href="#" class="company-logo" alt="sp-gadjets"></a>
+                <a href="#" class="company-logo" alt="GoPro"></a>
+                <a href="#" class="company-logo" alt="Vive"></a>
+            </div>
+            <section class="about-us-info">
+                <div class="about-us">
+                    <h2 class="about-us-title">О нас</h2>
+                    <p class="about-us-text">
+                        Огромный выбор гаджетовне оставит равнодушным гига,
+                        который есть в каждом из нас.
+                    </p>
+                    <p class="about-us-text">
+                        Мы можем доставить ваш товар в самые отдаленные точки
+                        России! DEVICE работает со многими транспортными команиями:
+                    </p>
+                    <ul>
+                        <li class="about-us-list">Деловые Линии</li>
+                        <li class="about-us-list">Автотрейдинг</li>
+                        <li class="about-us-list">ЖелДорЭкспедиция</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <h2 class="about-us-title">Контакты</h2>
+                    <p class="about-us-text">
+                    Вы можете забрать товар сами, заевах в наш офис.
+                    Заодно, вы сможете проверить работоспособность покупки.
+                    Всякое бывает.
+                    </p>
+                    <div class="maps">
+                        <img src="#" alt="Карта">
+                    </div>
+                </div>
+            </section>
+            <div class="half-row-info">
+                <a href="#" class="button">Подробнее о нас</a>
+            </div>
+            <div class="half-row-info">
+                <a href="#" class="button">Напишите нам</a>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="half-row">
+            <a href="#">DEVICE</a>
+        </div>
+        <div class="half-row user-block-footer">
+            <a href="#" class="user-block user-block-login">войти</a>
+            <a href="#"class="user-block user-block-compare">сравнить</a>
+            <a href="#" class="user-block user-block-cart">корзина</a>
+        </div>
+        <div class="row">
+            <p class="adress">г.Москва, ул. Строителей, 15</p>
+            <ul class="navigation navigation-footer">
+                <li class="navigation-footer-list"><a href="#">Доставка</a></li>
+                <li class="navigation-footer-list"><a href="#">Гарантия</a></li>
+                <li class="navigation-footer-list"><a href="#">Контакты</a></li>
+            </ul>
+            <p class="phone">Тел. +7(495)495-95-95</p>
+        </div>
+        <div class="row">
+            <ul class="social">
+                <li class="social-list"><a href="#" class="social-list-facebook">Facebook</a></li>
+                <li class="social-list"><a href="#" class="social-list-instagramm">instagramm</a></li>
+                <li class="social-list"><a href="#" class="social-list-twitter">Twitter</a></li>
+            </ul>
+            <a href="#" class="copyright">htmlacademy</a>
+        </div>
+    </footer>
   </body>
 </html>
