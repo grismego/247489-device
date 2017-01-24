@@ -4,44 +4,40 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="css\normalize.css">
-  <link rel="stylesheet" href="css\style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <div class="container clearfix">
-      <div class="row">
-        <a href="#" class="logo">device</a>
-      </div>
-      <div class="row-user">
-        <div class="half-row">
-          <div class="search-form">
-            <form action="#" method="get">
-              <input type="text" placeholder="поиск по сайту">
-            </form>
-          </div>
+    <header>
+      <div class="container clearfix">
+        <div class="logo">
+          <a href="#">device</a>
+        </div>
+        <!-- <div class="row-user"> -->
+        <div class="search-form">
+          <form action="#" method="get">
+            <input type="text" placeholder="поиск по сайту">
+          </form>
         </div>
         <div class="row-user-block">
           <a href="#" class="user-block user-block-login">войти</a>
           <a href="#" class="user-block user-block-compare">сравнить</a>
           <a href="#" class="user-block user-block-cart">корзина</a>
         </div>
-      </div>
-      <div class="row-info">
-        <div class="half-row">
+        <!-- </div> -->
+        <div class="row-info">
           <a href="#">каталог товаров</a>
+          <nav>
+            <ul class="navigation">
+              <li><a href="#">доставка</a></li>
+              <li><a href="#">гарантия</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="half-row">
-          <ul class="navigation">
-            <li><a href="#">доставка</a></li>
-            <li><a href="#">гарантия</a></li>
-            <li><a href="#">контакты</a></li>
-          </ul>
-        </nav>
       </div>
-    </div>
-  </header>
+    </header>
   <main>
     <div class="container cleafrix">
       <div class="slider-goods">
@@ -180,7 +176,7 @@
       <a href="#" class="user-block user-block-compare">сравнить</a>
       <a href="#" class="user-block user-block-cart">корзина</a>
     </div>
-    <div class="row">
+    <div class="info-block">
       <span class="adress">г.Москва, ул. Строителей, 15</span>
       <ul class="navigation navigation-footer">
         <li class="navigation-footer-list"><a href="#">Доставка</a></li>
@@ -189,7 +185,7 @@
       </ul>
       <span class="phone">Тел. +7(495)495-95-95</span>
     </div>
-    <div class="row">
+    <div class="social-block">
       <ul class="social">
         <li class="social-list"><a href="#" class="social-list-facebook">Facebook</a></li>
         <li class="social-list"><a href="#" class="social-list-instagramm">instagramm</a></li>
