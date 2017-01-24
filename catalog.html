@@ -15,16 +15,16 @@
         <a href="#">device</a>
       </div>
       <!-- <div class="row-user"> -->
-        <div class="search-form">
-          <form action="#" method="get">
-            <input type="text" placeholder="поиск по сайту">
-          </form>
-        </div>
-        <div class="row-user-block">
-          <a href="#" class="user-block user-block-login">войти</a>
-          <a href="#" class="user-block user-block-compare">сравнить</a>
-          <a href="#" class="user-block user-block-cart">корзина</a>
-        </div>
+      <div class="search-form">
+        <form action="#" method="get">
+          <input type="text" placeholder="поиск по сайту">
+        </form>
+      </div>
+      <div class="row-user-block">
+        <a href="#" class="user-block user-block-login">войти</a>
+        <a href="#" class="user-block user-block-compare">сравнить</a>
+        <a href="#" class="user-block user-block-cart">корзина</a>
+      </div>
       <!-- </div> -->
       <div class="row-info">
         <a href="#">каталог товаров</a>
@@ -50,75 +50,126 @@
       </ul>
     </div>
     <!-- <div class="row"> -->
-      <div class="container clearfix">
-        <aside class="sidebar">
-          <span class="filter">фильтр:</span>
-          <form action="#" method="post">
-            <div class="filter-block">
-              <span class="filter-title">
+    <div class="container clearfix">
+      <aside class="sidebar">
+        <span class="filter">фильтр:</span>
+        <form action="#" method="post">
+          <div class="filter-block">
+            <span class="filter-title">
                                     Стоимость:
                                 </span>
-              <input type="range">
+            <input type="range">
 
-            </div>
-            <div class="filter">
-              <span class="filter-title">
+          </div>
+          <div class="filter">
+            <span class="filter-title">
                 Цвет:
               </span>
-              <input type="checkbox" name="black" id="black" checked>
-              <label for="black">Черный</label>
-              <input type="checkbox" name="white" id="white">
-              <label for="mr_naty">Белый</label>
-              <input type="checkbox" name="blue" id="blue" checked>
-              <label for="suavectio">Синий</label>
-              <input type="checkbox" name="red" id="red">
-              <label for="malin_goetz">Красный</label>
-              <input type="checkbox" name="pink" id="pink">
-              <label for="murrays">Розовый</label>
-            </div>
-            <div class="filter">
-              <span class="filter-title">
+            <input type="checkbox" name="black" id="black" checked>
+            <label for="black">Черный</label>
+            <input type="checkbox" name="white" id="white">
+            <label for="mr_naty">Белый</label>
+            <input type="checkbox" name="blue" id="blue" checked>
+            <label for="suavectio">Синий</label>
+            <input type="checkbox" name="red" id="red">
+            <label for="malin_goetz">Красный</label>
+            <input type="checkbox" name="pink" id="pink">
+            <label for="murrays">Розовый</label>
+          </div>
+          <div class="filter">
+            <span class="filter-title">
               Bluetooth
               </span>
-              <input type="radio" name="yes" id="yes" checked>
-              <label for="yes">Есть</label>
-              <input type="radio" name="no" id="no">
-              <label for="no">Нет</label>
-            </div>
-            <button type="submit" name="button" class="button">
+            <input type="radio" name="yes" id="yes" checked>
+            <label for="yes">Есть</label>
+            <input type="radio" name="no" id="no">
+            <label for="no">Нет</label>
+          </div>
+          <button type="submit" name="button" class="button">
              Показать
             </button>
-          </form>
-        </aside>
-        <div class="sorting">
-          <span>сортировка</span>
-          <ul class="sorting-list">
-            <li class="sorting-type"><a href="#">по цене</a></li>
-            <li class="sorting-type"><a href="#">по типу</a></li>
-            <li class="sorting-type"><a href="#">по популярности</a></li>
-          </ul>
-          <ul class="sorting-toogle">
-            <li class="sorting-toogle-up"><a href="#">Up</a></li>
-            <li class="sorting-toogle-down"><a href="#">Down</a></li>
-          </ul>
-          <div class="products clearfix">
+        </form>
+      </aside>
+      <div class="sorting">
+        <span>сортировка</span>
+        <ul class="sorting-list">
+          <li class="sorting-type"><a href="#">по цене</a></li>
+          <li class="sorting-type"><a href="#">по типу</a></li>
+          <li class="sorting-type"><a href="#">по популярности</a></li>
+        </ul>
+        <ul class="sorting-toogle">
+          <li class="sorting-toogle-up"><a href="#">Up</a></li>
+          <li class="sorting-toogle-down"><a href="#">Down</a></li>
+        </ul>
 
-              <div class="product-item">
-                <a href="#" class="product">
-                  <img src="#" alt="Любительска селфи-палка">
-                  <img src="#" alt="new" class="new-item">
-                  <div class="hidden-block">
-                      <a href="#" class="button add-to-cart">В корзину</a>
-                      <a href="#" class="add-to-compare">Добавить к сравнению </a>
-                  </div>
-                </a>
-                <a href="#">
-                  <h2 class="product-title">Любительска селфи-палка</h2>
-                  <span class="product-price">500 руб.</span>
-                </a>
+        <div class="products clearfix">
+
+          <article class="product-item">
+            <div class="product-image">
+              <div class="action-buttons">
+                <a href="#" class="button add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавиь к сравнениб</a>
               </div>
+            </div>
+            <div class="product-item-image">
+              <img src="#" alt="Любительска селфи-палка">
+            </div>
+            <div class="product-item-info">
+              <h2 class="product-title">Любительска селфи-палка</h2>
+              <span class="product-price">500 руб.</span>
+            </div>
+          </article>
 
-            <div class="product-item">
+          <article class="product-item">
+            <div class="product-image">
+              <div class="action-buttons">
+                <a href="#" class="button add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавиь к сравнениб</a>
+              </div>
+            </div>
+            <div class="product-item-image">
+              <img src="#" alt="Любительска селфи-палка">
+            </div>
+            <div class="product-item-info">
+              <h2 class="product-title">Любительска селфи-палка</h2>
+              <span class="product-price">500 руб.</span>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <div class="product-image">
+              <div class="action-buttons">
+                <a href="#" class="button add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавиь к сравнениб</a>
+              </div>
+            </div>
+            <div class="product-item-image">
+              <img src="#" alt="Любительска селфи-палка">
+            </div>
+            <div class="product-item-info">
+              <h2 class="product-title">Любительска селфи-палка</h2>
+              <span class="product-price">500 руб.</span>
+            </div>
+          </article>
+
+          <article class="product-item">
+            <div class="product-image">
+              <div class="action-buttons">
+                <a href="#" class="button add-to-cart">В корзину</a>
+                <a href="#" class="add-to-compare">Добавиь к сравнениб</a>
+              </div>
+            </div>
+            <div class="product-item-image">
+              <img src="#" alt="Любительска селфи-палка">
+            </div>
+            <div class="product-item-info">
+              <h2 class="product-title">Любительска селфи-палка</h2>
+              <span class="product-price">500 руб.</span>
+            </div>
+          </article>
+          
+
+          <!-- <div class="product-item">
               <a href="#" class="product">
                 <img src="#" alt="Любительска селфи-палка">
                 <img src="#" alt="new" class="new-item">
@@ -131,52 +182,22 @@
                 <h2 class="product-title">Любительска селфи-палка</h2>
                 <span class="product-price">500 руб.</span>
               </a>
-            </div>
+            </div> -->
+<!-- не уверен, правильно ли сделал разметку блока с товаром.  -->
 
-            <div class="product-item">
-              <a href="#" class="product">
-                <img src="#" alt="Любительска селфи-палка">
-                <img src="#" alt="new" class="new-item">
-                <div class="hidden-block">
-                    <a href="#" class="button add-to-cart">В корзину</a>
-                    <a href="#" class="add-to-compare">Добавить к сравнению </a>
-                </div>
-              </a>
-              <a href="#">
-                <h2 class="product-title">Любительска селфи-палка</h2>
-                <span class="product-price">500 руб.</span>
-              </a>
-            </div>
-
-            <div class="product-item">
-              <a href="#" class="product">
-                <img src="#" alt="Любительска селфи-палка">
-                <img src="#" alt="new" class="new-item">
-                <div class="hidden-block">
-                    <a href="#" class="button add-to-cart">В корзину</a>
-                    <a href="#" class="add-to-compare">Добавить к сравнению </a>
-                </div>
-              </a>
-              <a href="#">
-                <h2 class="product-title">Любительска селфи-палка</h2>
-                <span class="product-price">500 руб.</span>
-              </a>
-            </div>
-     <!-- не уверен, правильно ли сделал разметку блока с товаром.  -->
-
-          </div>
-          <!-- Пагинация -->
-          <div class="pagination clearfix">
-            <ul class="pagination-list">
-              <li><a href="#" class="prev">назад</a></li>
-              <li><a href="#" class="pagination-page">1</a></li>
-              <li><a href="#" class="pagination-page">2</a></li>
-              <li><a href="#" class="pagination-page">3</a></li>
-              <li><a href="#" class="next">вперед</a></li>
-            </ul>
-          </div>
+        </div>
+        <!-- Пагинация -->
+        <div class="pagination clearfix">
+          <ul class="pagination-list">
+            <li><a href="#" class="prev">назад</a></li>
+            <li><a href="#" class="pagination-page">1</a></li>
+            <li><a href="#" class="pagination-page">2</a></li>
+            <li><a href="#" class="pagination-page">3</a></li>
+            <li><a href="#" class="next">вперед</a></li>
+          </ul>
         </div>
       </div>
+    </div>
     <!-- </div> -->
   </main>
   <footer class="main-footer">
