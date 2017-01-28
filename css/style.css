@@ -160,12 +160,18 @@ h2.slide-title
 {
     display: flex;
     margin-bottom: 20px;
+    outline: 3px solid black;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 .popular-item-block
 {
     width: 160px;
     outline: 1px solid black;
-    margin-right: 20px;
+    margin-right: 40px;
 }
 .popular-item-block:last-child
 {
@@ -180,7 +186,7 @@ h2.slide-title
     display: flex;
     outline: 1px solid black;
     clear: both;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 
@@ -193,10 +199,10 @@ h2.slide-title
 .service-toogle
 {
     outline: 1px solid black;
-    width: 300px;
+    width: 400px;
     float: left;
     clear: both;
-    margin-bottom: 20px;
+
 }
 .service-toogle label
 {
@@ -207,27 +213,40 @@ h2.slide-title
 .service-block
 {
     outline: 2px solid green;
-
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    vertical-align: middle;
 
 }
 .service-block input
 {
-    display: block;
+    display: none;
 }
 .service-slide
 {
     float: right;
-    width: 700px;
+    width: 760px;
     outline: 1px solid black;
-    margin-bottom: 20px;
-    /*clear: both;*/
+    padding-bottom: 20px;
+
 }
 
+.about-us-info
+{
+    outline: 1px solid black;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .about-us
 {
     float: left;
-    width: 460px;
+    width: 560px;
     margin-left: 0;
+    padding-right: 20px;
+    padding-bottom: 100px;
     outline: 1px solid black;
 
 
@@ -237,7 +256,7 @@ h2.slide-title
     float: left;
     width: 560px;
     outline: 1px solid black;
-    margin-left: 20px;
+    padding-left: 20px;
 }
 
 .logo-footer
@@ -252,11 +271,13 @@ h2.slide-title
 {
     width: 340px;
     float: right;
+        outline: 1px solid black;
 }
 .user-block-footer .user-block
 {
     display: inline;
     margin-left: 10px;
+
 }
 
 
@@ -265,6 +286,7 @@ h2.slide-title
     display: inline-block;
     width: 1050px;
     margin-bottom: 20px;
+        outline: 1px solid black;
 
 }
 .info-block .adress
@@ -280,6 +302,7 @@ h2.slide-title
     width: 450px;
     margin: 0 auto;
     padding: 0;
+        outline: 1px solid black;
 }
 .navigation-footer-list
 {
@@ -296,18 +319,155 @@ h2.slide-title
 
 .social-block
 {
-    width: 300px;
-    /*margin: 0 auto;*/
+    outline: 1px solid black;
+}
+.social
+{
+    display: inline-block;
+    width: 500px;
+    float: left;
+    margin: 0 auto;
+    text-align: right;
+}
+.copiright-info
+{
+    display: inline-block;
+    width: 500px;
+    float: right;
+    text-align: right;
 }
 .social li
 {
     display: inline-block;
-    
 }
-.copyright-info
+/*=====================Catalog.html=====================*/
+
+.title-goods
+{
+    padding-top: 30px;
+    margin-top: 0;
+}
+.breadcrumbs
+{
+    outline: 1px solid black;
+}
+.breadcrumbs li
+{
+
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.filter-name
+{
+    display: inline-block;
+    width: 330px;
+    outline: 1px dashed black;
+}
+.sorting-name
+{
+    padding-left: 70px;
+    float: right;
+    width: 760px;
+    outline: 1px dashed black;
+}
+.sorting-list
+{
+    display: inline-block;
+    margin: 0;
+}
+.sorting-list li
+{
+    display: inline-block;
+}
+.sorting-toogle
+{
+    float: right;
+    width: 100px;
+    margin: 0;
+}
+.sorting-toogle li
+{
+    display: inline-block;
+}
+.sorting-type a
+{
+ margin: 0 20px;
+}
+
+.sidebar
+{
+    float: left;
+    width: 330px;
+    outline: 1px dashed black;
+    /*margin-right: 30px;*/
+    height: 100%;
+    clear: both;
+}
+
+
+.content
+{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.filter-block
+{
+    outline: 1px dashed black;
+    padding: 30px 0;
+    /*margin: 40px 0;*/
+}
+.filter-title
 {
     display: block;
-    width: 200px;
+    margin-bottom: 20px;
+}
+
+.filter label
+{
+    display: block;
+    width: 160px;
+    margin: 10px 0;
+    outline: 1px dashed black;
+}
+
+.products
+{
     float: right;
-    /*clear: both;*/
+    width: 760px;
+    padding-left: 70px;
+    outline: 1px solid black;
+}
+
+.product-item
+{
+    width: 360px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.product-item:nth-child(2n)
+{
+    margin-right: 0;
+}
+
+.pagination
+{
+    display: inline-block;
+    float: right;
+    width: 760px;
+    padding-left: 70px;
+    outline: 1px solid black;
+
+}
+.pagination-list
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pagination-list li
+{
+    display: inline-block;
 }
