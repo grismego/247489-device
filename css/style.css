@@ -93,17 +93,44 @@ h2.slide-title
 .search-form
 {
     display: inline-block;
+    position: relative;
     margin-bottom: 40px;
-    width: 440px;
-    padding-right: 50px;
+    vertical-align: middle;
+    width: auto;
 }
+.search-form::before
+{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -170px -5px;
+    background-repeat: no-repeat;
+}
+
+.search-form input
+{
+    background-color: inherit;
+
+
+}
+.search--form
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 40px;
+}
+
+
 .row-user-block
 {
     display: inline-block;
     font-size: 0;
     float: right;
-    width: 520px;
-    text-align: right;
+    vertical-align: top;
 }
 .row-user-block a
 {
@@ -112,26 +139,77 @@ h2.slide-title
     color: black;
     text-decoration: none;
     text-transform: capitalize;
-
+    max-width: 150px;
+    line-height: 36px;
 }
 .user-block-login
 {
     display: inline-block;
-    width: 280px;
-    text-align: left;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+    margin-right: 200px;
+}
+.user-block-login::before
+{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -390px 0px;
+    background-repeat: no-repeat;
+}
+.user-block-compare
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+    margin-right: 10px;
+}
+.user-block-compare::before
+{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -65px 0px;
+    background-repeat: no-repeat;
 }
 .user-block-cart
 {
-
-    margin-left: 40px;
+display: inline-block;
+vertical-align: top;
+padding-left: 30px;
+position: relative;
 }
+.user-block-cart::before
+{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+
 .row-info
 {
     display: block;
     clear: both;
-    /*margin-bottom: 50px;*/
+    margin-bottom: 20px;
 }
-.row-info a
+.catalog-menu a
 {
      font-size: 18px;
      font-family: Gilroy;
@@ -140,6 +218,29 @@ h2.slide-title
      letter-spacing: 2px;
      text-decoration: none;
      text-transform: uppercase;
+}
+.catalog-menu
+{
+    position: absolute;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    width: auto;
+}
+.row-info-catalog::before
+{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -145px -2px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+
+
 }
 
 .button
@@ -161,30 +262,43 @@ h2.slide-title
 {
 
     width: 440px;
+    position: absolute;
 }
+
 .dropdown
 {
-    display: inline-block;
+    display: none;
+    width: 600px;
     margin-top: 20px;
     float: left;
+    vertical-align: top;
 }
 .dropdown-list
 {
     display: inline-block;
-    list-style: none;
-    width: 220px;
-    padding-left: 0;
-    margin-right: 10px;
+    max-width: 200px;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+.dropdown-list:nth-child(2)
+{
+    margin-right: 0;
+}
+.dropdown-list li
+{
+    display: inline-block;
+    vertical-align: top;
 }
 .dropdown-list a
 {
     font-size: 15px;
     line-height: 36px;
     font-family: Open Sans;
-    letter-spacing: 0px;
     font-weight: normal;
     text-decoration: none;
     text-transform: none;
+    letter-spacing: 0px;
 }
 
 nav
@@ -212,6 +326,15 @@ nav
 .navigation li:last-child
 {
     margin-left: 100px;
+}
+.navigation a
+{
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Gilroy;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
 }
 
 .slider-goods
@@ -444,20 +567,20 @@ nav
     color: #f7e184;
     text-decoration: none;
 }
-.half-row
-{
-    margin-top: 70px;
 
+.user-block-footer
+{
+    display: inline-block;
+    vertical-align: middle;
     float: right;
-    outline: 1px solid black;
-    text-align: right;
-}
-.user-block-footer .user-block
-{
-    display: inline;
-    margin-left: 55px;
+    margin-top: 60px;
 
 }
+.user-block-footer>a
+{
+    margin-right: 0px;
+}
+
 .user-block-footer  a
 {
     color: #e6e6e6;
@@ -465,7 +588,70 @@ nav
     text-transform: capitalize;
     font-size: 15px;
     font-family: Open Sans;
+    margin-left: 20px;
 }
+
+.user-block-login-footer
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+}
+.user-block-login-footer::before
+{
+
+        position: absolute;
+        top: -2px;
+        left: 5px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/sprite/sprite.png);
+        background-position: -410px 0px;
+        background-repeat: no-repeat;
+}
+
+.user-block-compare-footer
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+}
+.user-block-compare-footer::before
+{
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -85px 0px;
+    background-repeat: no-repeat;
+}
+.user-block-cart-footer
+{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    position: relative;
+}
+.user-block-cart-footer::before
+{
+    position: absolute;
+    top: -2px;
+    left: 5px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/sprite/sprite.png);
+    background-position: -25px 0px;
+    background-repeat: no-repeat;
+}
+
+
 
 .main-footer
 {

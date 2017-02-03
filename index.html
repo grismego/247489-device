@@ -11,22 +11,41 @@
 <body>
   <header>
     <div class="header container clearfix">
-
       <div class="logo">
         <a href="#">device</a>
       </div>
-      <div class="search-form">
-        <form action="#" method="get">
-          <input type="text" placeholder="поиск по сайту">
-        </form>
+      <div class="top-menu-head">
+          <div class="search-form">
+            <form action="#" method="get" class="search--form">
+              <input type="text" placeholder="Поиск по сайту">
+            </form>
+          </div>
+          <div class="row-user-block">
+            <a href="#" class="user-block user-block-login">войти</a>
+            <a href="#" class="user-block user-block-compare">сравнить</a>
+            <a href="#" class="user-block user-block-cart">корзина</a>
+          </div>
       </div>
-      <div class="row-user-block">
-        <a href="#" class="user-block user-block-login">войти</a>
-        <a href="#" class="user-block user-block-compare">сравнить</a>
-        <a href="#" class="user-block user-block-cart">корзина</a>
-      </div>
+
       <div class="row-info clearfix">
-        <a href="catalog.html" class="row-info-catalog">каталог товаров</a>
+          <div class="catalog-menu">
+              <a href="catalog.html" class="row-info-catalog">каталог товаров</a>
+              <div class="dropdown">
+                <ul class="dropdown-list">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="">Моноподы для селфи</a></li>
+                  <li><a href="">Экшн камеры</a></li>
+                </ul>
+                <ul class="dropdown-list">
+                  <li><a href="#">Фитнес браслеты</a></li>
+                  <li><a href="">Умные часы</a></li>
+                </ul>
+                <ul class="dropdown-list">
+                  <li><a href="">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+          </div>
+
         <nav>
           <ul class="navigation">
             <li><a href="#">доставка</a></li>
@@ -34,20 +53,7 @@
             <li><a href="#">контакты</a></li>
           </ul>
         </nav>
-        <div class="dropdown">
-          <ul class="dropdown-list">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Экшн камеры</a></li>
-          </ul>
-          <ul class="dropdown-list">
-            <li><a href="#">Фитнес браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-          </ul>
-          <ul class="dropdown-list">
-            <li><a href="">Квадрокоптеры</a></li>
-          </ul>
-        </div>
+
       </div>
 
     </div>
@@ -251,9 +257,9 @@
       <a href="#">DEVICE</a>
     </div>
     <div class="half-row user-block-footer">
-      <a href="#" class="user-block user-block-login">войти</a>
-      <a href="#" class="user-block user-block-compare">сравнить</a>
-      <a href="#" class="user-block user-block-cart">корзина</a>
+      <a href="#" class="user-block user-block-login-footer">войти</a>
+      <a href="#" class="user-block user-block-compare-footer">сравнить</a>
+      <a href="#" class="user-block user-block-cart-footer">корзина</a>
     </div>
     <div class="info-block">
       <span class="adress">г.Москва, ул. Строителей, 15</span>
