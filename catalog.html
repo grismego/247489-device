@@ -9,24 +9,46 @@
 </head>
 
 <body>
+
   <header>
-    <div class=" header container clearfix">
+    <div class="header container clearfix">
       <div class="logo">
-        <a href="index.html">device</a>
+        <a href="#">device</a>
       </div>
-      <div class="search-form">
-        <form action="#" method="get">
-          <input type="text" placeholder="поиск по сайту">
-        </form>
+      <div class="top-menu-head">
+        <div class="search-form">
+          <form action="#" method="get" class="search--form">
+            <input type="text" placeholder="Поиск по сайту">
+            <button type="button" name="button" class="search-button">Найти</button>
+          </form>
+        </div>
+        <div class="row-user-block">
+          <a href="#" class="user-block user-block-login">Валентин Петухов</a>
+          <a href="#" class="user-block user-block-login-exit">выйти</a>
+          <a href="#" class="user-block user-block-compare">сравнить</a>
+          <a href="#" class="user-block user-block-cart">корзина</a>
+        </div>
       </div>
-      <div class="row-user-block">
-        <a href="#" class="user-block user-block-login">Валентин Петухов</a>
-        <a href="#" class="user-block user-block-login-exit">выйти</a>
-        <a href="#" class="user-block user-block-compare">сравнить</a>
-        <a href="#" class="user-block user-block-cart">корзина</a>
-      </div>
+
       <div class="row-info clearfix">
-        <a href="catalog.html" class="row-info-catalog">каталог товаров</a>
+        <div class="catalog-menu">
+          <a href="catalog.html" class="row-info-catalog">каталог товаров</a>
+          <div class="dropdown">
+            <ul class="dropdown-list">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="">Моноподы для селфи</a></li>
+              <li><a href="">Экшн камеры</a></li>
+            </ul>
+            <ul class="dropdown-list">
+              <li><a href="#">Фитнес браслеты</a></li>
+              <li><a href="">Умные часы</a></li>
+            </ul>
+            <ul class="dropdown-list">
+              <li><a href="">Квадрокоптеры</a></li>
+            </ul>
+          </div>
+        </div>
+
         <nav>
           <ul class="navigation">
             <li><a href="#">доставка</a></li>
@@ -34,21 +56,9 @@
             <li><a href="#">контакты</a></li>
           </ul>
         </nav>
-        <div class="dropdown">
-          <ul class="dropdown-list">
-            <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="">Моноподы для селфи</a></li>
-            <li><a href="">Экшн камеры</a></li>
-          </ul>
-          <ul class="dropdown-list">
-            <li><a href="#">Фитнес браслеты</a></li>
-            <li><a href="">Умные часы</a></li>
-          </ul>
-          <ul class="dropdown-list">
-            <li><a href="">Квадрокоптеры</a></li>
-          </ul>
-        </div>
+
       </div>
+
     </div>
   </header>
   <main>
@@ -69,7 +79,7 @@
           <span class="filter">фильтр:</span>
         </div>
         <div class="sorting-name">
-          <span>сортировка</span>
+          <span>сортировка:</span>
           <ul class="sorting-list">
             <li class="sorting-type active"><a href="#">по цене</a></li>
             <li class="sorting-type"><a href="#">по типу</a></li>
@@ -197,26 +207,27 @@
             <span class="product-price">4 900 руб.</span>
           </div>
         </article>
+        <div class="pagination clearfix">
+          <ul class="pagination-list">
+            <li><a href="#" class="prev">назад</a></li>
+            <li><a href="#" class="pagination-page">1</a></li>
+            <li><a href="#" class="pagination-page">2</a></li>
+            <li><a href="#" class="pagination-page">3</a></li>
+            <li><a href="#" class="next">вперед</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="pagination clearfix">
-        <ul class="pagination-list">
-          <li><a href="#" class="prev">назад</a></li>
-          <li><a href="#" class="pagination-page">1</a></li>
-          <li><a href="#" class="pagination-page">2</a></li>
-          <li><a href="#" class="pagination-page">3</a></li>
-          <li><a href="#" class="next">вперед</a></li>
-        </ul>
-      </div>
-  </div>
+
+    </div>
   </main>
   <footer class="main-footer container">
     <div class="logo-footer">
       <a href="#">DEVICE</a>
     </div>
     <div class="half-row user-block-footer">
-      <a href="#" class="user-block user-block-login">войти</a>
-      <a href="#" class="user-block user-block-compare">сравнить</a>
-      <a href="#" class="user-block user-block-cart">корзина</a>
+      <a href="#" class="user-block user-block-login-footer">войти</a>
+      <a href="#" class="user-block user-block-compare-footer">сравнить</a>
+      <a href="#" class="user-block user-block-cart-footer">корзина</a>
     </div>
     <div class="info-block">
       <span class="adress">г.Москва, ул. Строителей, 15</span>
@@ -228,11 +239,11 @@
       <span class="phone">Тел. +7(495)495-95-95</span>
     </div>
     <div class="social-block clearfix">
-      <ul class="social">
-        <li class="social-list"><a href="#" class="social-list-facebook">Facebook</a></li>
-        <li class="social-list"><a href="#" class="social-list-instagramm">instagramm</a></li>
-        <li class="social-list"><a href="#" class="social-list-twitter">Twitter</a></li>
-      </ul>
+      <div class="social">
+        <a href="#" class="social-list social-list-facebook">Facebook</a>
+        <a href="#" class="social-list social-list-instagramm">instagramm</a>
+        <a href="#" class="social-list social-list-twitter">Twitter</a>
+     </div>
       <div class="copiright-info">
         <a href="#" class="copyright">htmlacademy</a>
       </div>
