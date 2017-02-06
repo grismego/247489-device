@@ -131,8 +131,8 @@ h2.slide-title
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -170px -5px;
+    background-image: url(../img/sprite.png);
+    background-position: -164px 1px;
     background-repeat: no-repeat;
 }
 
@@ -245,8 +245,8 @@ input:focus+.search-button
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -390px 0px;
+    background-image: url(../img/sprite.png);
+    background-position: -385px 5px;
     background-repeat: no-repeat;
 }
 .user-block-compare
@@ -265,8 +265,8 @@ input:focus+.search-button
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -65px 0px;
+    background-image: url(../img/sprite.png);
+    background-position: -62px 5px;
     background-repeat: no-repeat;
 }
 .user-block-cart
@@ -285,8 +285,8 @@ margin-left: 20px;
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: 0px 0px;
+    background-image: url(../img/sprite.png);
+    background-position: 4px 5px;
     background-repeat: no-repeat;
 }
 
@@ -323,8 +323,8 @@ margin-left: 20px;
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -145px -2px;
+    background-image: url(../img/sprite.png);
+    background-position:-137px 3px;
     background-repeat: no-repeat;
     opacity: 0.3;
 }
@@ -589,10 +589,64 @@ display: inline-block;
 
 .popular-company
 {
-    display: flex;
-
-    clear: both;
+    margin-bottom: 53px;
+    font-size: 0;
+    letter-spacing: 0;
 }
+
+.company-logo
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+    height: 100px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    font-size: 0;
+    background: #fff url(../img/sprite.png) 50% 50% no-repeat;
+    opacity: .2;
+}
+.company-logo:last-child
+{
+    margin-right: 0;
+}
+.dji
+{
+    background-position: -7px -145px;
+}
+.spgadjets
+{
+    background-position: -7px -590px;
+}
+.gopro
+{
+background-position: -7px -370px;
+}
+.vive
+{
+    background-position: -7px -810px;
+}
+.dji:hover
+{
+    background-position: -7px -35px;
+    opacity: 1;
+}
+.spgadjets:hover
+{
+    background-position: -7px -480px;
+    opacity: 1;
+}
+.gopro:hover
+{
+    background-position: -7px -260px;
+    opacity: 1;
+}
+.vive:hover
+{
+    background-position: -7px -700px;
+    opacity: 1;
+}
+
 
 
 .service-slide-second,
@@ -829,10 +883,16 @@ display: inline-block;
         content: "";
         width: 20px;
         height: 20px;
-        background-image: url(../img/sprite/sprite.png);
-        background-position: -410px 0px;
+        background-image: url(../img/sprite.png);
+        background-position: -408px 4px;
         background-repeat: no-repeat;
 }
+.user-block-login-footer:hover::before
+{
+    background-position: -431px 4px;
+    opacity: 1;
+}
+
 
 .user-block-compare-footer
 {
@@ -849,10 +909,16 @@ display: inline-block;
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -85px 0px;
+    background-image: url(../img/sprite.png);
+    background-position: -82px 5px;
     background-repeat: no-repeat;
 }
+.user-block-compare-footer:hover::before
+{
+    background-position: -102px 5px;
+    opacity: 1;
+}
+
 .user-block-cart-footer
 {
     display: inline-block;
@@ -868,9 +934,14 @@ display: inline-block;
     content: "";
     width: 20px;
     height: 20px;
-    background-image: url(../img/sprite/sprite.png);
-    background-position: -25px 0px;
+    background-image: url(../img/sprite.png);
+    background-position: -18px 5px;
     background-repeat: no-repeat;
+}
+.user-block-cart-footer:hover::before
+{
+    background-position: -40px 5px;
+    opacity: 1;
 }
 
 
@@ -1006,21 +1077,21 @@ display: inline-block;
     vertical-align: top;
     text-decoration: none;
     font-size: 0;
-    background:  url("../img/sprite/sprite.png") no-repeat center;
+    background:  url("../img/sprite.png") no-repeat center;
     opacity: 0.3;
 }
 .social-list-facebook
 {
 
-    background-position: -195px -3px;
+    background-position: -191px 0px;
 }
 .social-list-instagramm
 {
-    background-position: center;
+    background-position: -241px 0px;
 }
 .social-list-twitter
 {
-    background-position: -295px -3px;
+    background-position:-290px 0px;
 
 }
 .copyright
@@ -1031,7 +1102,7 @@ display: inline-block;
     height: 39px;
     vertical-align: top;
 
-    background: url("../img/sprite/sprite.png") no-repeat -456px;
+    background: url("../img/sprite.png") no-repeat -456px;
 }
 .copyright:hover
 {
@@ -1180,8 +1251,12 @@ display: inline-block;
     border-color: transparent transparent #bcbcbc transparent;
     vertical-align: top;
     margin-right: 20px;
-
 }
+.sorting-toogle-up:hover
+{
+    border-color: transparent transparent #000 transparent;
+}
+
 .sorting-toogle-down
 {
     width: 0;
@@ -1441,32 +1516,32 @@ input[type="checkbox"] + label::before{
     height: 23px;
     width: 23px;
     margin: 0 15px 0 0;
-    background: url("../img/sprite/checkbox/spritesheet.png")no-repeat;
+    background: url("../img/sprite.png")no-repeat;
 }
 input[type="checkbox"] + label::before {
-    background-position: -66px -0px;
+    background-position: -591px -5px;
 }
 
 input[type="checkbox"]:checked + label::before {
-    background-position: -132px -0px;
+    background-position: -558px -5px;
 }
 
 input[type="checkbox"]:checked + label:hover::before
 {
-background-position: -165px -0px;
+background-position: -558px  -5px;
 }
 input[type="checkbox"]:checked + label:active::before
 {
-background-position: -165px  -0px;
+background-position: -558px  -5px;
 }
 
 input[type="checkbox"] + label:hover::before
 {
-    background-position: -99px -0px;
+    background-position: -525px -5px;
 }
 input[type="checkbox"] + label:active::before
 {
-    background-position: -165px -0px;
+    background-position:-657px -5px;
 }
 
 
@@ -1482,7 +1557,7 @@ input[type="radio"] + label::before
     height: 23px;
     width: 23px;
     margin: 0 15px 0 0;
-    background: url("../img/sprite/checkbox/spritesheet.png")no-repeat;
+    background: url("../img/sprite.png")no-repeat;
     background-position: -1111px -1111px;
     border: 2px solid #c6c6c6;
     border-radius: 50%;
@@ -1493,8 +1568,8 @@ input[type="radio"] + label:hover::before
 }
 
 input[type="radio"]:checked + label::before {
-    background-position: -195px -3px;
+    background-position: -720px -8px;
 }
 input[type="radio"]:disabled + label::before {
-    background-position: -144px -279px;
+    background-position: -944px -279px;
 }
