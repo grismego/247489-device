@@ -42,12 +42,16 @@ body
 font-family: "Open Sans", "Arial", sans-serif;
 }
 
-h2.slide-title
+.slide-title
 {
+    width: 500px;
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 47px;
     color: #000000;
     font-weight: 800;
+}
+{
+
 }
 .service-title
 {
@@ -75,6 +79,7 @@ h2.slide-title
     padding: 0 60px;
     margin-top: 40px;
     background-color: #f7e296;
+    padding-bottom: 142px;
 }
 .logo
 {
@@ -140,7 +145,7 @@ h2.slide-title
 {
     background-color: inherit;
     padding-left: 40px;
-    width: 300px;
+    width: 355px;
     font-family: "Open Sans","Arial",sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -170,6 +175,8 @@ input:focus+.search-button
 {
     display: none;
     font-size: 18px;
+    width: 85px;
+    height: 49px;
     font-family: "Open Sans","Arial",sans-serif;
     padding: 10px;
     margin-bottom: 0;
@@ -309,11 +316,19 @@ margin-left: 20px;
 }
 .catalog-menu
 {
-    position: absolute;
+    position: relative;
     display: inline-block;
-    float: left;
+
     vertical-align: top;
     width: auto;
+}
+.catalog-menu:hover
+{
+    padding-bottom:30px;
+}
+.catalog-menu:hover .dropdown
+{
+    display: block;
 }
 .row-info-catalog::before
 {
@@ -362,11 +377,28 @@ margin-left: 20px;
     top: 0;
     height: 100%;
 }
+.button:active
+{
+    color: #a88a20;
+}
+
+.button-form
+{
+    border: none;
+    background-color:  transparent;
+    width: 200px;
+    z-index: 1;
+}
+.button-form:active
+{
+    outline: none;
+}
+
 .row-info-catalog
 {
 
-    width: 440px;
-    position: absolute;
+    width: 280px;
+    padding-right: 40px;
 }
 .row-info-catalog:hover,
 .row-info-catalog:hover::before
@@ -382,10 +414,15 @@ margin-left: 20px;
 .dropdown
 {
     display: none;
+    position: absolute;
     width: 600px;
     margin-top: 20px;
+    padding-bottom: 34px;
+    padding-right: 500px;
     float: left;
     vertical-align: top;
+    background-color: #f7e296;
+    z-index: 2;
 }
 .dropdown-list
 {
@@ -462,8 +499,8 @@ margin-left: 20px;
 .slide-control
 {
     position: absolute;
-    top: 270px;
-    left: 872px;
+    top: 279px;
+    left: 1005px;
     width: 120px;
     height: 10px;
     font-size: 0;
@@ -473,7 +510,7 @@ margin-left: 20px;
 }
 .slider-goods-control
 {
-display: inline-block;
+    display: inline-block;
     vertical-align: top;
     width: 10px;
     height: 10px;
@@ -485,11 +522,32 @@ display: inline-block;
     cursor: pointer;
     box-sizing: border-box;
 }
-
+.slider-goods-control:active
+{
+    opacity: 1;
+}
 .slider-goods
 {
     position: relative;
     clear: both;
+    padding: 0 75px;
+    margin-bottom: 100px;
+    margin-top: -65px;
+}
+.slider-goods::after
+{
+    content: "";
+    position: absolute;
+    top: -17px;
+    right: 500px;
+    width: 100px;
+    height: 7px;
+    background-color: #fff;
+}
+
+.slider-goods img
+{
+    margin-top: -30px;
 }
 .slider-goods input[type="radio"]
 {
@@ -516,20 +574,33 @@ display: inline-block;
 {
     margin-top: 50px;
     list-style: none;
+    padding-left: 0;
 }
 .slide-parametres-item
 {
     display: inline-block;
-    width: 140px;
+    font-size: 0;
+    vertical-align: middle;
+    max-width: 140px;
+    margin-right: 60px;
+
 }
 .unit
 {
+    font-size: 36px;
+    font-family: "Gilroy", "Arial", sans-serif;
     display: block;
+    text-align: left;
     margin-bottom: 10px;
+
 }
 .unit-description
 {
     display: block;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "Open Sans", "Arial", sans-serif;
+
 }
 
 .popular-items
@@ -690,7 +761,7 @@ background-position: -7px -370px;
     display: inline-block;
     width: 160px;
     margin-right: 100px;
-    margin-bottom:  60px;
+    margin-bottom:  20px;
 
 }
 .service-block
@@ -1102,17 +1173,23 @@ background-position: -7px -370px;
     height: 39px;
     vertical-align: top;
 
-    background: url("../img/sprite.png") no-repeat -456px;
+    background: url("../img/sprite.png") no-repeat -448px 1px;
 }
 .copyright:hover
 {
-    background-position: -493px;
+    background-position: -485px 1px;
 }
 .copyright:active
 {
     opacity: .3;
 }
+.service-button:active
+{
+    padding-right:  120px;
+    background-color: #000000;
+    color: #f7e184;
 
+}
 /*=====================Catalog.html=====================*/
 
 .title-goods
@@ -1373,15 +1450,60 @@ padding-left: 60px;
 .action-buttons
 {
     display: none;
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    padding: 80px;
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.product-item-image:hover .action-buttons
+{
+    display: block;
+
+}
+.add-to-cart
+{
+    width: 200px;
+    margin-top:  70px;
+}
+
+.add-to-compare
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: #000;
+    text-transform: none;
+    letter-spacing: 0.001em;
+    text-decoration: none;
+    opacity: .5;
+    margin-top: 20px;
+    vertical-align: middle;
+}
+.add-to-compare:hover
+{
+    opacity: 1;
+}
+.add-to-compare:active
+{
+    opacity: .2;
 }
 .product-item
 {
     margin-top: 70px;
+    position: relative;
     width: 360px;
     display: inline-block;
     margin-right: 35px;
     font-size: 0;
 }
+
 
 .product-title
 {
@@ -1489,7 +1611,10 @@ padding-left: 60px;
 {
     background-color: #d9d9d9;
 }
-
+.prev:active
+{
+    opacity: .3;
+}
 .next
 {
     width: 125px;
@@ -1501,6 +1626,11 @@ padding-left: 60px;
 {
     background-color: #d9d9d9;
 }
+.next:active
+{
+    opacity: .3;
+}
+
 input[type="checkbox"],
 input[type="radio"]
 {
@@ -1572,4 +1702,27 @@ input[type="radio"]:checked + label::before {
 }
 input[type="radio"]:disabled + label::before {
     background-position: -944px -279px;
+}
+
+.feedback
+{
+    display: none;
+    margin: 0 auto;
+    width: 960px;
+}
+.feedback-row input
+{
+    width: 360px;
+    padding: 10px;
+    float: left;
+}
+.feedback-row label
+{
+    display: inline-block;
+    width: 300px;
+}
+.feedback-row
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
