@@ -99,10 +99,21 @@
         <aside class="sidebar">
           <form action="catalog.html" method="post">
             <div class="filter-block">
-              <span class="filter-title">
-                                            Стоимость:
-                                        </span>
-              <input type="range">
+              <span class="filter-title">Стоимость:</span>
+
+             <div class="range-filter">
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                </div>
+             </div>
 
             </div>
             <div class="filter">
@@ -251,10 +262,10 @@
   <div class="feedback">
     <form class="feedback-form" action="index.html" method="post">
       <div class="feedback-row">
-      <label for="Name">Ваше имя:</label>
-      <input type="text" name="Name" value="" id="name" placeholder="Представьтесь, пожалуйста" required>
-      <label for="Name">Ваш e-mail:</label>
-      <input type="text" name="Name" value="" id="name" placeholder="Для отправки отчета" required>
+        <label for="Name">Ваше имя:</label>
+        <input type="text" name="Name" value="" id="name" placeholder="Представьтесь, пожалуйста" required>
+        <label for="Name">Ваш e-mail:</label>
+        <input type="text" name="Name" value="" id="name" placeholder="Для отправки отчета" required>
       </div>
       <textarea placeholder="В свободной форме" rows="10">
 
