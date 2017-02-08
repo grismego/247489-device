@@ -9,7 +9,8 @@
 </head>
 
 <body>
-  <header>
+
+  <header class="head">
       <div class="container">
     <div class="header clearfix">
       <div class="logo">
@@ -64,8 +65,11 @@
   <main>
     <!-- =================СЛАЙДЕР================== -->
     <div class="container cleafrix">
+        <input type="radio" name="toogle-slide"  id="btn-1" checked>
+        <input type="radio" name="toogle-slide"  id="btn-2">
+        <input type="radio" name="toogle-slide"  id="btn-3">
       <div class="slider-goods">
-        <div class="slide-1">
+        <div class="slide" id="slide-1">
           <img src="img/slider-1.png" alt="первый слайд" width="384" height="">
           <div class="slide-info">
             <h2 class="slide-title">Делай селфи, как Бен Стиллер</h2>
@@ -90,7 +94,7 @@
           </div>
         </div>
 
-        <div class="slide-2">
+        <div class="slide" id="slide-2">
           <img src="img/slider-2.png" alt="второй слайд" width="384" height="">
           <div class="slide-info">
             <h2 class="slide-title">Худеем правильно!</h2>
@@ -107,7 +111,7 @@
           </div>
         </div>
 
-        <div class="slide-3">
+        <div class="slide" id="slide-3">
           <img src="img/slider-3.png" alt="третий слайд" width="384" height="">
           <div class="slide-info">
             <h2 class="slide-title">Пархает как бабочка, жалит как пчела!</h2>
@@ -127,13 +131,11 @@
             </ul>
           </div>
         </div>
-        <input type="radio" name="toogle-slide" class="slide-toogle" id="1">
-        <input type="radio" name="toogle-slide" class="slide-toogle" id="2">
-        <input type="radio" name="toogle-slide" class="slide-toogle" id="3">
+
         <div class="slide-control">
-            <label for="1" class="slider-goods-control">1 слайд</label>
-            <label for="2" class="slider-goods-control">2 слайд</label>
-            <label for="3" class="slider-goods-control">3 слайд</label>
+            <label for="btn-1" >1 слайд</label>
+            <label for="btn-2" >2 слайд</label>
+            <label for="btn-3" >3 слайд</label>
         </div>
       </div>
 
@@ -180,18 +182,13 @@
     </div>
 </div>
     <!-- ==================БЛОК С СЕРВИСАМИ================= -->
-
+    <input type="radio" name="toogle-slide-service" class="service-slide-toogle" id="service-1" checked>
+    <input type="radio" name="toogle-slide-service" class="service-slide-toogle" id="service-2">
+    <input type="radio" name="toogle-slide-service" class="service-slide-toogle" id="service-3">
     <div class="service-block clearfix">
-    <div class="container">
-      <input type="radio" name="toogle-slide" class="service-slide-toogle" id="service-1">
-      <input type="radio" name="toogle-slide" class="service-slide-toogle" id="service-2">
-      <input type="radio" name="toogle-slide" class="service-slide-toogle" id="service-3">
-      <div class="service-toogle">
-        <label for="service-1" class="button service-button">Доставка</label>
-        <label for="service-2" class="button service-button">Гарантия</label>
-        <label for="service-3" class="button service-button">Кредит</label>
-      </div>
-      <div class="service-slide service-slide-first">
+        <div class="container">
+
+      <div class="service-slide slide--1" id="service-first">
         <h2 class="title service-title">
                                 Доставка
                             </h2>
@@ -199,21 +196,29 @@
           Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш этаж.
         </p>
       </div>
-      <div class="service-slide service-slide-second">
+      <div class="service-slide slide--2"  id="service-second">
         <h2 class="title service-title">
                                 Гарантия
                             </h2>
         <p class="service-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+        Если из-за возгарания купленного у нас товара у вас сгорит дом - не переживайте,
+        мы выдадим вам новый. Товар, не дом, конечно же.
         </p>
-      </div>
-      <div class="service-slide service-slide-third">
+    </div>
+      <div class="service-slide slide--3" id="service-third">
         <h2 class="title service-title">
                                 Кредит
                             </h2>
         <p class="service-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+          Залезть в долговую яму стало проще! Кредитные констультанты
+          подберут для вас наиболее выгодные условия кредита. Выгодные для нашего
+          банка, разумеется.
         </p>
+      </div>
+      <div class="service-toogle">
+        <label for="service-1" class="button">Доставка</label>
+        <label for="service-2" class="button">Гарантия</label>
+        <label for="service-3" class="button">Кредит</label>
       </div>
     </div>
     </div>
