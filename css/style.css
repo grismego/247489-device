@@ -1514,6 +1514,35 @@ input:focus+.search-button {
 .product-item-image:hover .action-buttons {
   display: block;
 }
+.product-item-new
+{
+    position: relative;
+}
+.product-item-new::after
+{
+    position: absolute;
+    content: "new";
+    right: 21px;
+    top: 22px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    font-size: 18px;
+    color: black;
+    border: 2px solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Gilroy","Arial",sans-serif;
+    padding: 20px 0;
+    letter-spacing: .05em;
+    font-weight: 800;
+    color: rgba(0,0,0,.2);
+    text-transform: uppercase;
+    text-align: center;
+    box-sizing: border-box;
+    z-index: 1;
+}
 
 .add-to-cart {
   width: 200px;
@@ -1792,6 +1821,14 @@ input[type="radio"]:disabled+label::before {
 .range-controls .toggle-min {
   left: 0px;
 }
+.range-controls .toggle:active
+{
+    border: 2px solid #fff;
+    background: #7eae29;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+
+}
+
 
 .range-controls .toggle-max {
   left: 130px;
