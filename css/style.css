@@ -658,7 +658,7 @@ margin-left: 20px;
     display: inline-block;
     font-size: 0;
     vertical-align: middle;
-    max-width: 140px;
+    /*max-width: 140px;*/
     margin-right: 60px;
 
 }
@@ -844,7 +844,6 @@ background-position: -7px -370px;
 
     width: 280px;
     float: left;
-    clear: both;
     position: relative;
     z-index: 1;
     margin-top: -22px;
@@ -882,7 +881,7 @@ background-position: -7px -370px;
 
     margin-top: 80px;
     margin-bottom: 94px;
-    padding-bottom: 73px;
+    padding-bottom: 150px;
     background-color: #e5e5e5;
 
 }
@@ -899,10 +898,13 @@ background-position: -7px -370px;
 
     margin-top: -68px;
     padding-right: 325px;*/
-    position: absolute;
+    float: right;
     top: -71px;
     right: 420px;
     width: 700px;
+    padding-left: 172px;
+    margin-top: -71px;
+
 }
 .service-slide-first
 {
@@ -912,20 +914,20 @@ background-position: -7px -370px;
 {
     background-image: url("../img/delivery.png");
     background-repeat: no-repeat;
-    background-position: 500px 43px;
+    background-position: 700px 43px;
 }
 .slide--2
 {
     background-image: url("../img/warranty.png");
     background-repeat: no-repeat;
-    background-position: 500px 23px;
+    background-position: 700px 23px;
 }
 
 .slide--3
 {
     background-image: url("../img/credit.png");
     background-repeat: no-repeat;
-    background-position: 500px 29px;
+    background-position: 700px 29px;
 }
 .company-logo img
 {
@@ -1253,7 +1255,7 @@ background-position: -7px -370px;
     display: inline-block;
     float: right;
     width: 40px;
-    height: 40px;
+
     text-align: right;
     vertical-align: top;
 }
