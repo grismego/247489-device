@@ -1917,7 +1917,7 @@ input[type="radio"]:disabled+label::before {
 
 
 .feedback {
-  display:block;
+  display:none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2005,7 +2005,7 @@ input[type="radio"]:disabled+label::before {
 
     font: 14px;
     font-family: "Open Sans", "Arial", sans-serif;
-    line-height: 18px;
+    line-height: 22px;
     border:  none;
     outline: none;
 
