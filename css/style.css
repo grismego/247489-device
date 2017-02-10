@@ -46,14 +46,15 @@ body {
   font-size: 47px;
   color: #000000;
   font-weight: 800;
-  margin-top: 38px;
-  margin-bottom: 18px;
+  letter-spacing: 0.011em;
+  margin-top: 42px;
+  margin-bottom: 22px;
 }
 
 
 .slide-1 .slide-title
 {
-    padding-right:128px;
+    padding-right:123px;
 }
 
 
@@ -78,6 +79,7 @@ padding-right:128px;
   font-size: 47px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
+  margin-bottom: 27px;
 }
 
 .slide {
@@ -136,7 +138,7 @@ padding-right:128px;
 .search-form {
   display: inline-block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   vertical-align: middle;
   width: auto;
   padding-bottom: 10px;
@@ -309,7 +311,7 @@ input:focus+.search-button {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   color: black;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -327,8 +329,8 @@ input:focus+.search-button {
 
 .row-info-catalog::before {
   position: absolute;
-  top: -1px;
-  left: 200px;
+  top: 0;
+  left: 228px;
   content: "";
   width: 20px;
   height: 20px;
@@ -457,17 +459,27 @@ input:focus+.search-button {
   vertical-align: top;
   float: right;
   clear: both;
+  width: 550px;
 }
 
 .navigation {
   float: right;
   margin-top: 0;
   margin-bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul
+{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation li {
-  display: inline;
-  margin-left: 40px;
+  display: inline-block;
+  margin-right: 40px;
   letter-spacing: 0.2em;
 }
 
@@ -479,8 +491,9 @@ input:focus+.search-button {
   opacity: .3;
 }
 
-.navigation li:last-child {
-  margin-left: 100px;
+.navigation li:nth-child(3n) {
+  margin-left: 52px;
+  margin-right: 0;
 }
 
 .navigation a {
@@ -490,11 +503,12 @@ input:focus+.search-button {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  letter-spacing: 0.2em;
 }
 
 .slide-control {
   position: absolute;
-  top: 327px;
+  top: 356px;
   left: 1005px;
   width: 120px;
   /*height: 10px;*/
@@ -535,7 +549,7 @@ input:focus+.search-button {
 .slide-1
 {
     background: url("../img/slider-1.png") no-repeat;
-    background-position: 82px 1px;
+    background-position: 91px 5px;
 }
 .slide::before
 {
@@ -645,6 +659,11 @@ input:focus+.search-button {
 
 }
 
+.slide-info .button
+{
+    width: 220px;
+}
+
 /*.slide-info::after {
   position: absolute;
   content: "01";
@@ -664,14 +683,16 @@ input:focus+.search-button {
   font-family: Open Sans;
   line-height: 30px;
   color: #777777;
-  margin-bottom: 43px;
+  margin-bottom: 13px;
   padding-right: 45px;
+  min-height: 110px;
 }
 
 .slide-parametres {
-  margin-top: 50px;
+  margin-top: 8px;
   list-style: none;
   padding-left: 0;
+  letter-spacing: 0.001em;
 }
 
 .slide-parametres-item {
@@ -679,7 +700,7 @@ input:focus+.search-button {
   vertical-align: middle;
   font-size: 0;
   /*max-width: 140px;*/
-  margin-right: 60px;
+  margin-right: 76px;
   margin-top: 43px;
 }
 
@@ -704,7 +725,7 @@ input:focus+.search-button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 44px;
   margin-bottom: 80px;
 }
 
@@ -725,7 +746,7 @@ input:focus+.search-button {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 1px;
+  letter-spacing: 0.001em;
   color: #000;
 }
 
@@ -864,8 +885,8 @@ input:focus+.search-button {
   margin-right: auto;
   display: block;
   vertical-align: middle;
-  margin-top: 80px;
-  margin-bottom: 94px;
+  margin-top: 116px;
+  margin-bottom: 59px;
   padding-bottom: 150px;
   background-color: #e5e5e5;
 }
@@ -885,8 +906,8 @@ input:focus+.search-button {
   float: right;
   top: -71px;
   right: 420px;
-  width: 700px;
-  padding-left: 172px;
+  width: 755px;
+  padding-left: 118px;
   margin-top: -71px;
 }
 
@@ -895,7 +916,7 @@ input:focus+.search-button {
 .slide--1 {
   background-image: url("../img/delivery.png");
   background-repeat: no-repeat;
-  background-position: 700px 43px;
+  background-position: 673px 54px;
 }
 
 .slide--2 {
@@ -933,14 +954,20 @@ input:focus+.search-button {
   font-size: 47px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
-  margin-top: 60px;
+  margin-top: 43px;
 }
 
 .about-us-text {
   font-size: 15px;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
+  font-weight: 300;
   color: #777777;
+  margin-bottom: 35px;
+}
+.about-us .about-us-text
+{
+    width: 470px;
 }
 
 .about-us-list {
@@ -952,13 +979,14 @@ input:focus+.search-button {
   padding-left: 20px;
   position: relative;
   list-style: none;
+  margin-bottom: 10px;
 }
 
 .about-us-list::before
 {
     content: "";
     position: absolute;
-    left: -20px;
+    left: -17px;
     top: 10px;
     width: 10px;
     height: 10px;
@@ -971,11 +999,11 @@ input:focus+.search-button {
 
 .about-us ul {
   padding-left: 18px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .about-us a {
-  margin-top: 70px;
+  margin-top: 42px;
 }
 
 .about-us::before {
@@ -990,7 +1018,7 @@ input:focus+.search-button {
 }
 
 .contacts a {
-  margin-top: 50px;
+  margin-top: 71px;
   margin-bottom: 100px;
 }
 
@@ -1015,7 +1043,7 @@ input:focus+.search-button {
   float: left;
   width: 165px;
   margin-bottom: 30px;
-  margin-top: 60px;
+  margin-top: 37px;
 }
 
 .logo-footer a {
@@ -1038,7 +1066,7 @@ input:focus+.search-button {
   display: inline-block;
   vertical-align: middle;
   float: right;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .user-block-footer>a {
