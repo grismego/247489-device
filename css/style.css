@@ -383,6 +383,7 @@ input:focus+.search-button {
   background-color: transparent;
   width: 200px;
   z-index: 1;
+  outline: none;
 }
 
 .button-form:active {
@@ -1839,28 +1840,6 @@ input[type="radio"]:disabled+label::before {
   background-position: -944px -279px;
 }
 
-.feedback {
-  display: none;
-  margin: 0 auto;
-  width: 960px;
-}
-
-.feedback-row input {
-  width: 360px;
-  padding: 10px;
-  float: left;
-}
-
-.feedback-row label {
-  display: inline-block;
-  vertical-align: top;
-  width: 300px;
-}
-
-.feedback-row {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
 
 .range-controls {
   position: relative;
@@ -1933,4 +1912,203 @@ input[type="radio"]:disabled+label::before {
   border: none;
   border-radius: 5px;
   background: #f1f1f1;
+}
+
+
+
+.feedback {
+  display: none;;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -390px;
+
+  width: 960px;
+  background-color: #fff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  z-index: 20;
+
+  box-shadow: -0px 22px 102px -15px rgba(0,0,0,0.75);
+}
+
+.feedback-name
+{
+    display: inline-block;
+    width: 360px;
+    box-sizing: border-box;
+
+}
+.feedback-name label
+{
+    display: block;
+    width: 100px;
+    margin-right: 0;
+}
+.feedback-email
+{
+    display: inline-block;
+    width: 360px;
+    box-sizing: border-box;
+    margin-left: 35px;
+
+}
+.feedback-email label
+{
+    display: block;
+    margin-right: 0;
+    width: 110px;
+}
+.feedback textarea
+{
+
+    width: 760px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    resize: none;
+    padding: 15px 20px;
+    font: 14px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 18px;
+    border:  none;
+    outline: none;
+    margin-top:  10px;
+}
+.textarea
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.feedback label, span
+{
+    font-size: 18px;
+
+    line-height: 18px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.feedback input[type="text"],
+.feedback input[type="email"]
+{
+    padding: 15px 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: none;
+    width: 360px;
+
+    font: 14px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    line-height: 18px;
+    border:  none;
+    outline: none;
+}
+.close-form
+{
+    position: relative;
+    top: -425px;
+    right: -579px;
+
+    width: 53px;
+    height: 53px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #f0c52e;
+    opacity: .5;
+}
+.close-form::before,
+.close-form::after
+{
+    position: absolute;
+    content: "";
+    top: 26px;
+    left: 13px;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+
+    z-index: 2;
+}
+.close-form::after
+{
+    transform: rotate(45deg);
+}
+.close-form::before
+{
+    transform: rotate(-45deg);
+}
+.close-form:hover
+{
+    opacity: 1;
+}
+.close-form:active::before,
+.close-form:active::after
+{
+    opacity: .3;
+}
+
+.modal-map
+{
+    position: fixed;
+    display: none;
+    width: 960px;
+    height: 559px;
+    top: 50%;
+    left: 50%;
+    margin-top: -280px;
+    margin-left: -390px;
+    box-sizing: border-box;
+    box-shadow: -0px 22px 102px -15px rgba(0,0,0,0.75);
+    z-index: 10;
+}
+.close-form-map
+{
+    position: relative;
+    top: -545px;
+    right: -873px;
+
+    width: 53px;
+    height: 53px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #f0c52e;
+    opacity: .5;
+}
+.close-form-map::before,
+.close-form-map::after
+{
+    position: absolute;
+    content: "";
+    top: 26px;
+    left: 13px;
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+
+    z-index: 2;
+}
+.close-form-map::after
+{
+    transform: rotate(45deg);
+}
+.close-form-map::before
+{
+    transform: rotate(-45deg);
+}
+.close-form-map:hover
+{
+    opacity: 1;
+}
+.close-form-map:active::before,
+.close-form-map:active::after
+{
+    opacity: .3;
 }
