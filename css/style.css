@@ -1166,17 +1166,19 @@ input:focus+.search-button {
   vertical-align: top;
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .info-block .adress {
   float: left;
+  text-align: left;
   width: 240px;
 }
 
 .navigation-footer {
   text-align: center;
-  display: block;
-  float: left;
+  display: inline-block;
+    padding: 0;
   width: 560px;
   margin: 0 auto;
 }
@@ -1185,7 +1187,7 @@ input:focus+.search-button {
   font-size: 18px;
   font-family: "Gilroy", "Arial", sans-serif;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1203,20 +1205,25 @@ input:focus+.search-button {
 .navigation-footer-list {
   display: inline-block;
   vertical-align: top;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
-.adress, .phone {
+.adress,
+.phone
+{
   color: #e6e6e6;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 15px;
-  font-family: Open Sans;
-  letter-spacing: 1px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0em;
 }
 
 .info-block .phone {
   float: right;
+    text-align: right;
+
 }
 
 .phone {
@@ -1244,6 +1251,7 @@ input:focus+.search-button {
   vertical-align: top;
   width: 160px;
   margin: 0 auto;
+  margin-left: 85px;
   text-align: center;
 }
 
@@ -1922,7 +1930,7 @@ input[type="radio"]:disabled+label::before {
   top: 50%;
   left: 50%;
   margin-top: -280px;
-  margin-left: -390px;
+  margin-left: -480px;
 
   width: 960px;
   background-color: #fff;
@@ -1983,6 +1991,15 @@ input[type="radio"]:disabled+label::before {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.feedback textarea:focus{
+
+    background-color: #fff;
+    outline:  2px solid #e5e5e5;
+}
+.feedback textarea:hover{
+
+background-color: #eaeaea;
+}
 
 .feedback label, span
 {
@@ -2019,11 +2036,17 @@ input[type="radio"]:disabled+label::before {
     color: #000;
     box-sizing: border-box;
 }
-.feedback input[type="text"]:invalid,
-.feedback input[type="email"]:invalid
+.feedback input[type="text"]:hover,
+.feedback input[type="email"]:hover
+{
+    background-color: #eaeaea;
+
+}
+
+
+.invalid
 {
     background-color: #f6dada;
-
 }
 
 
@@ -2081,7 +2104,7 @@ input[type="radio"]:disabled+label::before {
     top: 50%;
     left: 50%;
     margin-top: -280px;
-    margin-left: -390px;
+    margin-left: -475px;
     box-sizing: border-box;
     box-shadow: -0px 22px 102px -15px rgba(0,0,0,0.75);
     z-index: 10;
