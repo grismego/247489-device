@@ -79,7 +79,8 @@ padding-right:128px;
   font-size: 47px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
-  margin-bottom: 27px;
+  margin-bottom: 28px;
+  letter-spacing: 0.02em;
 }
 
 .slide {
@@ -102,13 +103,13 @@ padding-right:128px;
 
 .logo {
   position: relative;
-  top: -30px;
-  margin-bottom: -17px;
+  top: -28px;
+  margin-bottom: -16px;
 }
 
 .logo a {
   font-size: 48px;
-  font-family: Gilroy;
+  font-family: "Gilroy", "Arial", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.001em;
   font-weight: bold;
@@ -128,7 +129,7 @@ padding-right:128px;
   display: inline-block;
   vertical-align: top;
   float: left;
-  margin-left: 10px;
+  margin-left: 17px;
 }
 
 .user-block.user-block-exit {
@@ -243,7 +244,7 @@ input:focus+.search-button {
 .user-block-login {
   display: inline-block;
   vertical-align: top;
-  padding-left: 30px;
+  padding-left: 27px;
   position: relative;
   float: left;
 }
@@ -251,7 +252,7 @@ input:focus+.search-button {
 .user-block-login::before {
   position: absolute;
   top: 8px;
-  left: 5px;
+  left: 1px;
   content: "";
   width: 20px;
   height: 20px;
@@ -347,7 +348,7 @@ input:focus+.search-button {
   width: 260px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 800;
   letter-spacing: 0.2em;
   color: black;
   text-transform: uppercase;
@@ -460,7 +461,8 @@ input:focus+.search-button {
   vertical-align: top;
   float: right;
   clear: both;
-  width: 550px;
+  font-size: 0;
+  /*width: 550px;*/
 }
 
 .navigation {
@@ -480,7 +482,7 @@ input:focus+.search-button {
 
 .navigation li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 36px;
   letter-spacing: 0.2em;
 }
 
@@ -493,8 +495,8 @@ input:focus+.search-button {
 }
 
 .navigation li:nth-child(3n) {
-  margin-left: 52px;
-  margin-right: 0;
+  margin-left: 71px;
+  margin-right: -4px;
 }
 
 .navigation a {
@@ -509,8 +511,8 @@ input:focus+.search-button {
 
 .slide-control {
   position: absolute;
-  top: 356px;
-  left: 1005px;
+  top: 332px;
+  left: 1000px;
   width: 120px;
   /*height: 10px;*/
   font-size: 0;
@@ -681,42 +683,51 @@ input:focus+.search-button {
 
 .slide-description {
   font-size: 15px;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   line-height: 30px;
+  font-weight: 300;
   color: #777777;
+  letter-spacing: 0.011em;
   margin-bottom: 13px;
-  padding-right: 45px;
-  min-height: 110px;
+  padding-right: 33px;
+  min-height: 87px;
 }
 
 .slide-parametres {
-  margin-top: 8px;
+  margin-top: 64px;
   list-style: none;
   padding-left: 0;
-  letter-spacing: 0.001em;
+
+
 }
 
 .slide-parametres-item {
   display: inline-block;
   vertical-align: middle;
+
   font-size: 0;
   /*max-width: 140px;*/
   margin-right: 76px;
-  margin-top: 43px;
+
 }
 
 .unit {
   font-size: 36px;
   font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.001em;
   display: block;
+
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
 }
 
 .unit-description {
   display: block;
   font-size: 13px;
+  font-weight: 300;
   line-height: 20px;
+  letter-spacing: 0.001em;
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -726,7 +737,7 @@ input:focus+.search-button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 44px;
+  margin-top: 42px;
   margin-bottom: 80px;
 }
 
@@ -744,10 +755,10 @@ input:focus+.search-button {
 .popular-item-description {
   display: block;
   font-family: "Gilroy", "Arial", sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 0.001em;
+  letter-spacing: 0.02em;
   color: #000;
 }
 
@@ -768,7 +779,7 @@ input:focus+.search-button {
 }
 
 .popular-company {
-  margin-bottom: 53px;
+  margin-bottom: 58px;
   font-size: 0;
   letter-spacing: 0;
 }
@@ -790,38 +801,38 @@ input:focus+.search-button {
 }
 
 .dji {
-  background-position: -7px -145px;
+  background-position: 0px -145px;
 }
 
 .spgadjets {
-  background-position: -7px -590px;
+  background-position: -3px -584px;
 }
 
 .gopro {
-  background-position: -7px -370px;
+  background-position: 2px -364px;
 }
 
 .vive {
-  background-position: -7px -810px;
+  background-position: -2px -800px;
 }
 
 .dji:hover {
-  background-position: -7px -35px;
+  background-position: 0px -35px;
   opacity: 1;
 }
 
 .spgadjets:hover {
-  background-position: -7px -480px;
+  background-position: -3px -473px;
   opacity: 1;
 }
 
 .gopro:hover {
-  background-position: -7px -260px;
+  background-position: 2px -253px;
   opacity: 1;
 }
 
 .vive:hover {
-  background-position: -7px -700px;
+  background-position: -2px -690px;
   opacity: 1;
 }
 
@@ -886,7 +897,7 @@ input:focus+.search-button {
   margin-right: auto;
   display: block;
   vertical-align: middle;
-  margin-top: 116px;
+  margin-top: 106px;
   margin-bottom: 59px;
   padding-bottom: 150px;
   background-color: #e5e5e5;
@@ -897,17 +908,11 @@ input:focus+.search-button {
 }
 
 .service-slide {
-  /*float: right;
-    width: 435px;
 
-    padding-bottom: 20px;
-
-    margin-top: -68px;
-    padding-right: 325px;*/
   float: right;
   top: -71px;
   right: 420px;
-  width: 755px;
+  width: 758px;
   padding-left: 118px;
   margin-top: -71px;
 }
@@ -964,7 +969,7 @@ input:focus+.search-button {
   line-height: 30px;
   font-weight: 300;
   color: #777777;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 .about-us .about-us-text
 {
@@ -1019,8 +1024,14 @@ input:focus+.search-button {
 }
 
 .contacts a {
-  margin-top: 71px;
+  margin-top: 63px;
   margin-bottom: 100px;
+}
+.maps
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-top:9px;
 }
 
 .contacts {
@@ -1044,7 +1055,7 @@ input:focus+.search-button {
   float: left;
   width: 165px;
   margin-bottom: 30px;
-  margin-top: 37px;
+  margin-top: 50px;
 }
 
 .logo-footer a {
@@ -1067,7 +1078,7 @@ input:focus+.search-button {
   display: inline-block;
   vertical-align: middle;
   float: right;
-  margin-top: 50px;
+  margin-top: 69px;
 }
 
 .user-block-footer>a {
@@ -1079,8 +1090,13 @@ input:focus+.search-button {
   text-decoration: none;
   text-transform: capitalize;
   font-size: 15px;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   margin-left: 20px;
+}
+.user-block-footer a:first-child
+{
+    margin-left:0;
+    margin-right: 13px;
 }
 
 .user-block-login-footer {
@@ -1165,14 +1181,14 @@ input:focus+.search-button {
   display: inline-block;
   vertical-align: top;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 57px;
   text-align: center;
 }
 
 .info-block .adress {
   float: left;
   text-align: left;
-  width: 240px;
+  /*width: 240px;*/
 }
 
 .navigation-footer {
@@ -1188,10 +1204,15 @@ input:focus+.search-button {
   font-family: "Gilroy", "Arial", sans-serif;
   color: #ffffff;
   font-weight: 800;
-  letter-spacing: 1px;
+
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.navigation-footer-list:nth-child(3n)
+{
+    margin-right: 0;
 }
 
 .navigation-footer-list a:hover {
@@ -1205,7 +1226,8 @@ input:focus+.search-button {
 .navigation-footer-list {
   display: inline-block;
   vertical-align: top;
-  margin: 0 20px;
+  /*margin: 0 20px;*/
+  margin-right: 35px;
 }
 
 .adress,
@@ -1213,7 +1235,7 @@ input:focus+.search-button {
 {
   color: #e6e6e6;
   text-decoration: none;
-  text-transform: capitalize;
+
   font-size: 15px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
@@ -1249,9 +1271,9 @@ input:focus+.search-button {
 .social {
   display: inline-block;
   vertical-align: top;
-  width: 160px;
+  width: 240px;
   margin: 0 auto;
-  margin-left: 85px;
+  margin-left: 31px;
   text-align: center;
 }
 
@@ -1259,7 +1281,7 @@ input:focus+.search-button {
   display: inline-block;
   vertical-align: top;
   float: right;
-  width: 40px;
+  width: 34px;
   text-align: right;
 }
 
@@ -1276,11 +1298,13 @@ input:focus+.search-button {
   vertical-align: top;
   width: 40px;
   min-height: 40px;
-  margin: 0 2px;
+
   text-decoration: none;
   font-size: 0;
   background: url("../img/sprite.png") no-repeat center;
   opacity: 0.3;
+  margin-right: 0px;
+  margin-left: 12px;
 }
 
 .social-list-facebook {
@@ -1325,22 +1349,29 @@ input:focus+.search-button {
 /*=====================Catalog.html=====================*/
 
 .title-goods {
-  padding-top: 30px;
-  margin-top: 0;
+  margin-top: 35px;
+  margin-bottom: 23px;
   padding-left: 60px;
+
+  font-size: 47px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.015em;
 }
 
 .breadcrumbs {
   padding-left: 60px;
+  margin-bottom: 50px;
 }
 
 .breadcrumbs a {
   color: #000;
   font-size: 14px;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   text-decoration: none;
   text-transform: capitalize;
   padding-right: 20px;
+
   opacity: 0.3;
 }
 
@@ -1355,15 +1386,15 @@ input:focus+.search-button {
 .breadcrumbs li {
   display: inline-block;
   vertical-align: top;
-  padding-right: 20px;
+  padding-right: 12px;
   position: relative;
 }
 
 .breadcrumbs li::before {
   position: absolute;
   content: "";
-  right: 20px;
-  bottom: 5px;
+  right: 11px;
+  bottom: 4px;
   width: 7px;
   height: 7px;
   background-image: url("../img/arrow.png");
@@ -1391,11 +1422,11 @@ input:focus+.search-button {
 
 .filter-name {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 270px;
   padding-left: 60px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 16px;
   background-color: #dbdbdb;
 }
 
@@ -1405,17 +1436,22 @@ input:focus+.search-button {
 
 .sorting-name {
   padding-left: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 26px;
+  padding-bottom: 25px;
   float: right;
   width: 760px;
   background-color: #ebebeb;
+}
+.sorting-name ul
+{
+    margin-left: 24px;
+    padding:0;
 }
 
 .sorting-name span {
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: .2em;
+  letter-spacing: .25em;
   color: #000;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -1443,6 +1479,8 @@ input:focus+.search-button {
 
 .sorting-toogle {
   float: right;
+  display: inline-block;
+  vertical-align: baseline;
   width: 100px;
   margin: 0;
   font-size: 0;
@@ -1450,13 +1488,15 @@ input:focus+.search-button {
 }
 
 .sorting-toogle-up {
+
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 8px 10px 8px;
   border-color: transparent transparent #bcbcbc transparent;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 27px;
+  margin-top: 3px;
 }
 
 .sorting-toogle-up:hover {
@@ -1473,6 +1513,7 @@ input:focus+.search-button {
   border-width: 10px 8px 0 8px;
   border-color: #050405 transparent transparent transparent;
   vertical-align: top;
+  margin-top: 4px;
 }
 .sorting-toogle-down:active
 {
@@ -1490,12 +1531,17 @@ input:focus+.search-button {
 }
 
 .sorting-type a {
+  display: inline-block;
+  vertical-align: top;
   text-decoration: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: 300;
   color: #000;
   opacity: 0.3;
-  margin: 0 20px;
+  margin-left: 20px;
+  margin-right: 7px;
+
 }
 
 .active a {
@@ -1521,7 +1567,7 @@ input:focus+.search-button {
 .filter-name span {
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: .2em;
+  letter-spacing: .25em;
   color: #000;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
@@ -1529,20 +1575,24 @@ input:focus+.search-button {
 }
 
 .filter-block {
-  margin-top: 30px;
+  margin-top: 70px;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  padding: 30px 0;
-  margin-bottom: 15px;
+  padding-top: 11px;
+  margin-bottom: 12px;
   display: block;
 }
 
 .filter-title {
   display: block;
-  margin-bottom: 20px;
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  margin-bottom: 0;
+}
+.filter .filter-title
+{
+    margin-bottom:22px;
 }
 
 .filter {
@@ -1553,7 +1603,7 @@ input:focus+.search-button {
 
 .filter:nth-child(2) {
   border-bottom: 2px solid black;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .filter label {
@@ -1561,9 +1611,18 @@ input:focus+.search-button {
   vertical-align: middle;
 
   width: auto;
-  margin-bottom: 20px;
+
   margin-right: 40px;
   cursor: pointer;
+
+  font-size: 14px;
+  line-height: 40px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 300;
+}
+.filter label:last-child
+{
+    margin-bottom: 31px;
 }
 
 .products {
@@ -1571,6 +1630,7 @@ input:focus+.search-button {
   width: 760px;
   padding-left: 70px;
   background-color: #fff;
+  padding-top: 69px;
 }
 
 .action-buttons {
@@ -1598,8 +1658,8 @@ input:focus+.search-button {
 {
     position: absolute;
     content: "new";
-    right: 21px;
-    top: 22px;
+    right: 24px;
+    top: 29px;
     width: 60px;
     height: 60px;
     z-index: 2;
@@ -1648,12 +1708,12 @@ input:focus+.search-button {
 }
 
 .product-item {
-  margin-top: 70px;
   position: relative;
   width: 360px;
   display: inline-block;
   vertical-align: top;
   margin-right: 35px;
+  margin-bottom: 40px;
   font-size: 0;
 }
 
@@ -1665,18 +1725,19 @@ input:focus+.search-button {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: bold;
   width: 270px;
-  margin-top: 40px;
-  letter-spacing: 0.001em;
+  margin-top: 32px;
+  letter-spacing: 0.02em;
 }
 
 .product-price {
   font-size: 16px;
   font-family: "Gilroy", "Arial", sans-serif;
+  font-weight: 300;
   color: #525252;
   display: inline-block;
   vertical-align: top;
   float: right;
-  margin-top: 40px;
+  margin-top: 34px;
 }
 
 .product-item:nth-child(2n) {
@@ -1687,8 +1748,8 @@ input:focus+.search-button {
   display: inline-block;
   vertical-align: top;
   width: 760px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 74px;
+  margin-top: -11px;
   background-color: #ebebeb;
 }
 
@@ -1786,7 +1847,7 @@ input[type="checkbox"]+label::before {
   content: "";
   position: relative;
   left: 0px;
-  top: -3px;
+  top: 8px;
   display: inline-block;
   vertical-align: top;
   height: 23px;
@@ -1824,7 +1885,7 @@ input[type="radio"]+label::before {
   content: "";
   position: relative;
   left: 0px;
-  top: -3px;
+  top: 8px;
   display: inline-block;
   vertical-align: top;
   height: 23px;
@@ -1852,7 +1913,7 @@ input[type="radio"]:disabled+label::before {
 .range-controls {
   position: relative;
   padding-top: 39px;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
   border-radius: 5px;
 }
 
@@ -1862,7 +1923,7 @@ input[type="radio"]:disabled+label::before {
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 56%;
   height: 2px;
   background: #91c92f;
 }
@@ -1871,8 +1932,8 @@ input[type="radio"]:disabled+label::before {
   position: absolute;
   top: 32px;
   left: 0px;
-  width: 12px;
-  height: 12px;
+  width: 9px;
+  height: 10px;
   cursor: pointer;
   border: 2px solid #000;
   border-radius: 50%;
@@ -1892,11 +1953,12 @@ input[type="radio"]:disabled+label::before {
 
 
 .range-controls .toggle-max {
-  left: 130px;
+  left: 112px;
 }
 
 .price-controls {
   font-size: 0;
+  margin-bottom: 29px;
 }
 
 .price-controls label {
@@ -1912,7 +1974,7 @@ input[type="radio"]:disabled+label::before {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 14px;
   width: 60px;
-  padding: 2px 6px;
+  padding: 2px 0;
   text-align: left;
   ;
   color: #c6c6c6;
