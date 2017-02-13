@@ -734,6 +734,7 @@ input:focus+.search-button {
 
 .popular-items {
   display: flex;
+  flex-flow: row wrap;
   margin-bottom: 20px;
   width: 100%;
   margin-left: auto;
@@ -749,8 +750,12 @@ input:focus+.search-button {
   margin-bottom: 70px;
 }
 
-.popular-item-block img:active {
+.popular-item-block img:active  {
   opacity: .3;
+}
+.popular-item-block:active span
+{
+    opacity: .3;
 }
 
 .popular-item-description {
@@ -775,7 +780,7 @@ input:focus+.search-button {
   background-color: #f0c52e;
 }
 
-.popular-item-block:last-child {
+.popular-item-block:nth-child(6n) {
   margin-right: 0;
 }
 
@@ -893,7 +898,7 @@ input:focus+.search-button {
 
 .service-block {
   position: relative;
-  width: 100%;
+ min-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -913,7 +918,7 @@ input:focus+.search-button {
   float: right;
   top: -71px;
   right: 420px;
-  width: 758px;
+  min-width: 758px;
   padding-left: 118px;
   margin-top: -71px;
 }
@@ -1276,7 +1281,7 @@ input:focus+.search-button {
 .social {
   display: inline-block;
   vertical-align: top;
-  width: 240px;
+  min-width: 240px;
   margin: 0 auto;
   margin-left: 31px;
   text-align: center;
@@ -1454,6 +1459,7 @@ input:focus+.search-button {
 }
 
 .sorting-name span {
+
   font-size: 16px;
   line-height: 19px;
   letter-spacing: .25em;
@@ -1461,6 +1467,8 @@ input:focus+.search-button {
   font-family: "Gilroy", "Arial", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
+
+
 }
 
 .catalog-header {
@@ -1475,6 +1483,7 @@ input:focus+.search-button {
   display: inline-block;
   vertical-align: top;
   margin: 0;
+  width: 480px;
 }
 
 .sorting-list li {
@@ -1486,7 +1495,7 @@ input:focus+.search-button {
   float: right;
   display: inline-block;
   vertical-align: baseline;
-  width: 100px;
+  width: 60px;
   margin: 0;
   font-size: 0;
   text-align: right;
@@ -2014,6 +2023,11 @@ input[type="radio"]:disabled+label::before {
 
   box-shadow: -0px 22px 102px -15px rgba(0,0,0,0.75);
 }
+.modal-show
+{
+    display: block;
+}
+
 
 .feedback-name
 {
@@ -2166,6 +2180,12 @@ background-color: #eaeaea;
     opacity: .3;
 }
 
+/*.map-modal
+{
+    height: 100%;
+    width: 100%
+}*/
+
 .modal-map
 {
     position: fixed;
@@ -2180,6 +2200,7 @@ background-color: #eaeaea;
     box-shadow: -0px 22px 102px -15px rgba(0,0,0,0.75);
     z-index: 10;
 }
+
 .close-form-map
 {
     position: relative;
@@ -2194,6 +2215,12 @@ background-color: #eaeaea;
     background-color: #f0c52e;
     opacity: .5;
 }
+
+.modal-map-show
+{
+    display: block;
+}
+
 .close-form-map::before,
 .close-form-map::after
 {
