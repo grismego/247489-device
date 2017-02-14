@@ -30,6 +30,33 @@
   font-style: normal;
 }
 
+@keyframes scale
+{
+    0%
+    {
+
+        transform: scale(0.2);
+    }
+    65%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0%{
+    transform: translateX(-2000px);
+        }
+    60%{
+        transform: translateX(200px);
+    }
+
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -159,7 +186,7 @@ padding-right:128px;
 }
 
 .search-form input {
-  background-color: inherit;
+  background-color: #f7e296;
   padding-left: 40px;
   width: 355px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -194,7 +221,7 @@ input:focus+.search-button {
   font-family: "Open Sans", "Arial", sans-serif;
   padding: 4px;
   margin-bottom: 0;
-  background-color: inherit;
+  background-color: #f7e296;
   border: 2px solid #000;
   font-weight: 300;
 }
@@ -212,6 +239,7 @@ input:focus+.search-button {
 .search--form {
   display: inline-block;
   vertical-align: top;
+  min-height: 50px;
 }
 
 .row-user-block {
@@ -741,22 +769,32 @@ input:focus+.search-button {
   margin-right: auto;
   margin-top: 42px;
   margin-bottom: 80px;
+  font-size: 0;
 }
 
 .popular-item-block {
+    display: inline-block;
+    vertical-align: top;
   width: 160px;
   margin-right: 40px;
   text-decoration: none;
   margin-bottom: 70px;
 }
 
-.popular-item-block img:active  {
+/*.popular-item-block img:active  {
   opacity: .3;
 }
 .popular-item-block:active span
 {
     opacity: .3;
+}*/
+.popular-item-block:active .link-image,
+.popular-item-block:active .popular-item-description
+{
+    opacity: .3;
 }
+
+
 
 .popular-item-description {
   display: block;
@@ -934,13 +972,13 @@ input:focus+.search-button {
 .slide--2 {
   background-image: url("../img/warranty.png");
   background-repeat: no-repeat;
-  background-position: 700px 23px;
+  background-position: 673px 23px;
 }
 
 .slide--3 {
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
-  background-position: 700px 29px;
+  background-position:673px  29px;
 }
 
 .company-logo img {
@@ -1347,16 +1385,6 @@ input:focus+.search-button {
 }
 
 
-/*.service-button:active
-{
-    padding-right:  120px;
-    background-color: #000000;
-    color: #f7e184;
-
-}*/
-
-
-/*=====================Catalog.html=====================*/
 
 .title-goods {
   margin-top: 35px;
@@ -1663,6 +1691,12 @@ input:focus+.search-button {
 
 .product-item-image:hover .action-buttons {
   display: block;
+}
+.product-item-image
+{
+    background-color: #eeeeee;
+    color: black;
+    font-size: 22px;
 }
 .product-item-new
 {
@@ -2026,7 +2060,11 @@ input[type="radio"]:disabled+label::before {
 .modal-show
 {
     display: block;
+    animation-name: rotate;
+    animation-duration: 1s;
 }
+
+
 
 
 .feedback-name
@@ -2219,7 +2257,10 @@ background-color: #eaeaea;
 .modal-map-show
 {
     display: block;
+    animation-name: scale;
+    animation-duration:1s;
 }
+
 
 .close-form-map::before,
 .close-form-map::after
