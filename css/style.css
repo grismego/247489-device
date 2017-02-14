@@ -781,13 +781,7 @@ input:focus+.search-button {
   margin-bottom: 70px;
 }
 
-/*.popular-item-block img:active  {
-  opacity: .3;
-}
-.popular-item-block:active span
-{
-    opacity: .3;
-}*/
+
 .popular-item-block:active .link-image,
 .popular-item-block:active .popular-item-description
 {
