@@ -76,6 +76,9 @@
             transform: translateX(200px);
   }
 }
+iframe {
+    border: 0;
+}
 
 .clearfix:after {
   content: "";
