@@ -5,6 +5,10 @@ var map = document.querySelector(".map-modal");
 var bigmap = document.querySelector(".modal-map");
 var close_map = document.querySelector(".close-form-map");
 
+var login = document.querySelector(".user-block-login");
+var login_popup = document.querySelector(".login-popup");
+var close_login =document.querySelector(".close-login-popup");
+
 
 
 map.addEventListener("click", function(event) {
@@ -25,4 +29,15 @@ link.addEventListener("click", function(event) {
 close.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.remove("modal-show");
+});
+
+login.addEventListener("click", function(event) {
+    event.preventDefault();
+    login_popup.classList.add("login-show");
+    
+});
+
+close_login.addEventListener("click", function (event) {
+    event.preventDefault();
+    login_popup.classList.remove("login-show");
 });

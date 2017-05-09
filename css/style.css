@@ -2226,3 +2226,164 @@ input[type="radio"]:disabled+label::before {
 .close-form-map:active::before, .close-form-map:active::after {
   opacity: .3;
 }
+
+.login-popup
+{
+    position: fixed;
+    width: 376px;
+    display: none;
+
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    margin-top: -280px;
+    margin-left: -63px;
+    box-sizing: border-box;
+    box-shadow: -0px 22px 102px -15px rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+.login-show
+{
+    display: block;
+    animation-name: rotate;
+    animation-duration: 1s;
+}
+.login-form
+{
+    padding: 25px;
+    position: relative;
+}
+.restore
+{
+    width: 150px;
+    margin-top: 10px;
+    float: left;
+    text-decoration: none;
+    color: #000;
+}
+.restore:hover
+{
+    font-weight: bold;
+}
+.restore:active
+{
+    opacity: 0.6;
+}
+input[name="name"],
+input[name="password"]
+{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline-color: grey;
+}
+
+.login-user::after
+{
+    position: absolute;
+    content: "";
+    top: 32px;
+    left: 317px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/sprite.png");
+    background-position: -385px 5px;
+    background-repeat: no-repeat;
+}
+.login-password::before
+{
+    position: absolute;
+    content: "";
+    top: 90px;
+    left: 315px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/key.png");
+    background-repeat: no-repeat;
+}
+
+.login-form input
+{
+    background-color: #f2f2f2;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+.login-form input:hover
+{
+    background-color: #efecec;
+}
+.login-form input:focus
+{
+    background-color: #fdf9f9;
+}
+
+.button-login {
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    z-index: 1;
+    outline: none;
+    float: right;
+}
+.close-login-popup {
+  position: relative;
+ top: -235px;
+right: -322px;
+  width: 53px;
+  height: 53px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #f0c52e;
+  opacity: .5;
+}
+.close-login-popup::before, .close-login-popup::after {
+  position: absolute;
+  content: "";
+  top: 26px;
+  left: 13px;
+  width: 28px;
+  height: 2px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.close-login-popup::after {
+  transform: rotate(45deg);
+}
+
+.close-login-popup::before {
+  transform: rotate(-45deg);
+}
+.close-login-popup:hover {
+  opacity: 1;
+}
+
+.close-login-popup:active::before, .close-login-popup:active::after {
+  opacity: .3;
+}
+.action-block
+{
+    width: auto;
+    height: 30px;
+}
+.registr
+{
+    margin-top: 20px;
+    text-align: center;
+}
+.registr a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+.registr a:hover
+{
+    opacity: .4;
+}
+.registr a:active
+{
+    opacity: .8;
+}
